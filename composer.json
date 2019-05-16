@@ -1,0 +1,38 @@
+{
+    "name": "huangdijia/laravel-swoole-ide-helper",
+    "description": "swoole-ide-helper for laravel",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "swoole",
+        "ide-helper"
+    ],
+    "homepage": "https://github.com/huangdijia/laravel-swoole-ide-helper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "huangdijia",
+            "email": "huangdijia@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+        "illuminate/console": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+        "swoole/ide-helper": "~4.3.0"
+    },
+    "autoload": {
+        "files": [
+        ],
+        "psr-4": {
+            "Huangdijia\\SwooleIdeHelper\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Huangdijia\\SwooleIdeHelper\\SwooleIdeHelperServiceProvider"
+            ]
+        }
+    }
+}
