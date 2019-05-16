@@ -30,11 +30,11 @@ class GenerateCommand extends Command
     {
         $doc = new ExtensionDocument('chinese', dirname(__DIR__) . '/output', dirname(__DIR__) . '/config');
         $doc->export();
-        $this->info("IDE help files for Swoole {$doc->getSwooleVersion()} are generated successfully.");
+        $this->info("IDE help files for Swoole {$this->getSwooleVersion()} are generated successfully.");
     }
 
     protected function getSwooleVersion()
     {
-        return (new ReflectionExtension($this->extensionName))->getVersion();
+        return (new \ReflectionExtension('swoole'))->getVersion();
     }
 }
